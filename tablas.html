@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+    <style>
+        td{
+            background-color: steelblue;
+        }
+        col:nth-child(1){
+            background-color:thistle;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        las tablas en HTML sirven para mostrar contenido tabulado.
+        la estructura básica de una tabla se compone de.
+
+        table -> etiqueta que encierra una tabla
+        tr -> table row, etiqueta que construye una fila
+        td -> table data, etiqueta que construye una celda
+
+        truco: el numero de celdas dentro de un td establecerá el número de columnas en una tabla.
+
+        los títulos de las tablas se establecen con la etiqueta caption, es una etiqueta opcional, y según la especificación esta etiqueta se coloca justo después de la etiqueta table
+
+        las cabeceras de las tablas se establecen con la etiqueta thead.
+        Dentro tendremos una etiqueta tr normal, pero en el caso de las celdas, las estableceremos con la etiqueta th en lugar de td
+
+        el contenido de la tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla
+
+
+     -->
+     <h1>Tablas</h1>
+     <table>
+         <caption>Horario</caption>
+         <colgroup>
+            <col span="5">
+        </colgroup>
+         <thead>
+             <th> L </th>
+             <th> M </th>
+             <th> M </th>
+             <th> X </th>
+             <th> F </th>
+             <th> F </th>
+         </thead>
+         <tbody>
+         <tr>
+             <td>8:30 - 9:30 </td>
+             <td> 1 </td>
+             <td> 2 </td>
+             <td> 3 </td>
+             <td> 4 </td>
+             <td> 5 </td>
+         </tr>
+         <tr>
+             <td>9:30 - 10:30 </td>
+             <td> 1 </td>
+             <td> 2 </td>
+             <td> 3 </td>
+             <td> 4 </td>
+             <td> 5 </td>
+         </tr>
+         <tr>
+              <td colspan="6"> solo </td>
+         </tr>
+         <tr>
+             <td>10:30 - 11:30 </td>
+             <td rowspan="2"> hola mundo </td>
+             <td> 2 </td>
+             <td> 3 </td>
+             <td> 4 </td>
+         </tr>
+         <tr>
+             <td>12:30 - 1:30 </td>
+             <td> 1 </td>
+             <td> 2 </td>
+             <td> 3 </td>
+             <td> 4 </td>
+             <td> 5 </td>
+         </tr>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id atque recusandae! Fugiat, veniam, qui esse modi eveniet <span> placeat neque molestias perferendis quasi accusamus ducimus eligendi asperiores magnam? </span> Nostrum, rerum.</p>
+         <q> hola </q>
+
+         <pre>
+             <code>
+                td{
+                    background-color: steelblue;
+                }
+                col:nth-child(1){
+                    background-color:thistle;
+                }
+                span{
+                    color: red;
+                }
+             </code>
+         </pre>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    Total
+                </td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+     </table>
+
+
+
+</body>
+</html>

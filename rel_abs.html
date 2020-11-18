@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relativas, absolutas</title>
+</head>
+<body>
+    <!-- 
+        rutas absolutas:
+            tienen un protocolo, http o https y son únicas en la red se suelen usar para rutas externas
+
+        rutas relativas:
+            pueden ser relativas al punto donde nos encontramos o relativas a la raíz del proyecto
+
+        atributos de los enlaces
+            target: define donde se abrirá el recurso solicitado. por norma general siempre que se use rutas absolutas pondrás como valor "_blank"
+
+            download: atributo booleano sirve para descargar el recurso solicitado.
+            (el recurso debe ester en el mismo servidor)
+        
+     -->
+     <a href="https://www.google.com">ir a google</a>
+     <a href="./webdemo/index.html" target="_blank"> index relativo </a>
+
+     <a href="/assets/imagenes/portada.jpg" download> portada </a>
+
+</body>
+</html>
